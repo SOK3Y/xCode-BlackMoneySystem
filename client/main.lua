@@ -2,7 +2,6 @@ local SpawnedPed = nil
 local SpawnedObject = nil
 local Step = 1
 
--- Create a new thread
 Citizen.CreateThread(function()
     lib.requestAnimDict('amb@world_human_drinking@coffee@male@idle_a', 500)
     lib.requestModel(GetHashKey(Config.SpawnedPed.Model), 500)
