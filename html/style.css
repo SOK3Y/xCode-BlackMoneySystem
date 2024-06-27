@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {box-sizing: border-box;}
+
+body {
+    overflow: hidden;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#moneyWashCont {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22vw;
+    height: 18vh;
+    border-radius: .3em;
+    background: #1F2122;
+    overflow: hidden;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.show {animation: show 1s forwards}
+.hide {animation: hide .6s forwards}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#lineCont {
+    display: flex;
+    justify-content: center;
+    gap: .25vw;
+    position: absolute;
+    height: 100%;
+    width: 20%;
+}
+
+.line {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%) rotate(20.877deg);
+    height: 110%;
+    width: 1.6vw;
+    background: #292B2C;
+}
+
+#moneyWash {
+    display: grid;
+    align-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: .8vh;
+}
+
+.moneyWash {
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.moneyWash:first-child span {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2vh;
+}
+
+#iconImg {
+    position: absolute;
+    right: 0;
+    height: 1.5vh;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.moneyWash:nth-child(2) {
+    display: grid;
+    gap: .5vh;
+}
+
+.moneyWash:nth-child(2) span {
+    font-size: 1.2vh;
+}
+
+.moneyWash:last-child {display: flex}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 2.9vh;
+    width: 50%;
+    border-radius: .3vh;
+    font-size: 1.3vh;
+    background: rgba(81, 81, 81, 0.80);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    opacity: .9;
+    font-weight: 600;
+}
+
+#btn:hover {
+    transition-duration: .5s;
+    opacity: 1;
+    background-color: rgba(0, 179, 255, 0.95);
+}
+#iconImg:hover {
+    transition-duration: .5s;
+    opacity: 1;
+}
+
+#amountMoney {
+    position: relative;
+    height: 2.9vh;
+    width: 16vw;
+    border-radius: .3vh;
+    border: .05em solid #292B2C;
+    background: rgba(22, 22, 22, 0.80);
+    outline: none;
+    text-align: center;
+    font-size: 1.6vh;
+    color: #00B2FF;
+    font-weight: 700;
+}
