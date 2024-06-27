@@ -1,6 +1,6 @@
 # xCode-BlackMoneySystem
 
-discord.gg/x-code / discord.gg/babiczind
+## discord.gg/x-code / discord.gg/babiczind
 
 Add this to ox_inventory -> data -> items.lua
 
